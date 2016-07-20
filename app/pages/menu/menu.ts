@@ -4,6 +4,7 @@ import { HomePage } from '../home/home';
 import { UnoPage } from '../uno/uno';
 import { DosPage } from '../dos/dos';
 import { TresPage } from '../tres/tres';
+import { TabsPage } from '../tabs/tabs';
 
 /*
   Generated class for the MenuPage page.
@@ -36,7 +37,7 @@ export class MenuPage {
     {
       title: 'Tres',
       icon: 'home',
-      component: TresPage
+      component: TabsPage
     }
   ];
 

@@ -17,25 +17,35 @@ import { TresPage } from '../tres/tres';
 export class MenuPage {
 
   rootPage: any = HomePage;
+  pages: any[] = [
+    {
+      title: 'home',
+      icon: 'home',
+      component: HomePage
+    },
+    {
+      title: 'Uno',
+      icon: 'home',
+      component: UnoPage
+    },
+    {
+      title: 'Dos',
+      icon: 'home',
+      component: DosPage
+    },
+    {
+      title: 'Tres',
+      icon: 'home',
+      component: TresPage
+    }
+  ];
 
   constructor(private nav: NavController) {
 
   }
 
-  homePage(){
-    this.rootPage = HomePage;
-  }
-  
-  unoPage(){
-    this.rootPage = UnoPage;
-  }
-
-  dosPage(){
-    this.rootPage = DosPage;
-  }
-
-  tresPage(){
-    this.rootPage = TresPage;
+  openPage( page:any ){
+    this.rootPage = page;
   }
 
 }
